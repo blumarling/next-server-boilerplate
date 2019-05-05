@@ -1,0 +1,9 @@
+# import UserWhereInput User from "./types/user.graphql"
+
+type Query {
+  users(where: UserWhereInput, skip: Int, after: String, before: String, first: Int, last: Int): [User]!
+}
+
+schema {
+  query: Query
+}
